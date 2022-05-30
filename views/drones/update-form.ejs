@@ -1,1 +1,19 @@
-<h2>Update the drone</h2>
+
+
+
+    <form action="/drones/<%= drone.id%>/edit " method="POST">
+        <label >
+        Name:
+        <input type="text" name ="name" value="<%= drone.name%> "/>
+        </label>
+        <label>
+            Propellers:
+            <input type="text" name ="propeller" value="<%=drone.propeller%> "/>
+        </label>
+        <label >
+            Speed:
+            <input type="text" name ="speed" value="<%=drone.speed%> "/>
+        </label>
+        <button type="submit">update Drone</button>
+        </form>>
+    

@@ -1,1 +1,11 @@
 <h2>Available drones</h2>
+
+
+<% Drones.forEach(({name,propellers,speed,id}) => { %>
+ <div>  <h3><%=name  %> </h3>  
+<a href="/drones/<%= id%>/edit ">Edit Drone</a>
+    <h3><%= propellers %> </h3>
+   <h3><%= speed %> </h3> 
+ 
+<% }) %>
+</div>
